@@ -1,0 +1,46 @@
+.header{
+    color: var(--branco);
+
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+
+    border-bottom: 1px solid var(--borda-cabecalho-mobile);
+    position: absolute;
+}
+
+.header__logo{
+    margin-bottom: 1rem;
+}
+
+.header__nav {
+    text-align: center;
+}
+
+.header__link{
+    font: 1.1rem;
+
+    display: inline-block;
+
+    margin-right:  .7rem;
+    margin-bottom:  1.25rem;
+    margin-left:  .7rem;
+
+}
+
+@media screen and (min-width: 1024px){
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        border: none;
+    }
+}
